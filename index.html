@@ -4,8 +4,123 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- Hecho por Jhampier_ para el que dejo su cuenta github abierta, pst: subo videos a youtube :)-->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Roboto", sans-serif;
+        }
+
+        header{
+            border-bottom: 3px solid #fff3;
+            max-width: 1000;
+            padding: 35px;
+            display: flex;
+        }
+        header img{
+            width: 55px;
+        }
+        nav{
+            max-width: 1080px;
+            margin: 0 auto;
+        }
+        ul{
+
+            display: flex;
+            gap :50px;
+            justify-content: center;
+            align-items: center;
+            list-style: none;
+
+        } 
+        li{
+          
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 5px;
+            height: 20px;
+        }
+        li:hover{
+            border-bottom: 3px solid #428bca
+        }
+        ul a{
+            margin-bottom: 15px;
+            text-decoration: none;
+            color: black;
+        }
+       
+        main{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 150px 300px;
+        }
+        main .perfil{
+            width: 100%;
+            max-width: 770px;
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+
+        }
+        main .perfil h1{
+            font-family: "Roboto Mono", monospace;
+            font-size: 55px;
+        }
+        main .perfil p{
+            font-size: 20px;
+            font-family: "Roboto Mono", monospace;
+        }
+        main .img{
+            cursor: pointer;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        main .img img{
+            opacity: 0.8;
+            transition: scale 0.5s ease , opacity 0.5s ease-in;
+            border-radius: 50%;
+        }
+        main .img img:hover{
+            scale: 1.1;
+            opacity: 1;
+        }
+
+    </style>
 </head>
 <body>
-    <h1>HOLA MUNDO</h1>
+    
+    <header>
+       
+        <nav>
+
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">PROJECTS</a></li>
+                <li><a href="#">ABOUT ME</a></li>
+                <li><a href="#">CONTACTS</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="perfil">
+            <h1>YERSON GC</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus ex totam, quidem ut quis perspiciatis optio molestias maiores doloribus velit at facere neque libero? Magnam maxime ducimus necessitatibus sit obcaecati.</p>
+            
+        </div>
+        <div class="img">
+            <img src="https://avatars.githubusercontent.com/u/143344609?v=4" alt="img">
+        </div>
+    </main>
+
+
 </body>
 </html>
